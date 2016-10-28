@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Aloha Shop</title>
+
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/flickity.min.css" />
+      <link rel="stylesheet" href="css/style-stretch.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   </head>
+   <style>
+    #viewModal{
+      display: none; 
+      position: absolute; 
+      z-index: 1; 
+      margin: 0 auto;
+      top: 0;
+      left: 0;
+      width: 50%; 
+      height: 50%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: grey;
+    }
+
+    .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.product-wrapper
+{
+  height: 350px;
+}
+  .product-wrapper img
+  {
+    height: 150px;
+  }
+
+  .product-wrapper h3
+  {
+    font-size: 0.9em;
+  }
+
+  </style>
+   <body>
+      <a class="screen-reader skip-link" href="#main">Skip to content</a>
+
+      <header class="site-header">
+         <div class="site-header-inner container">
+            <div class="logo">
+               <h1 class="screen-reader">Aloha</h1>
+               <img src="images/aloha-logo.svg" alt="Aloha Apparel Co. logo" />
+            </div>
+            <div class="cart">
+               <span class="screen-reader">Shopping Cart</span>
+               <img src="images/cart-icon.svg" class="cart" alt="Shopping cart" />
+               <span class="total-items">0</span>
+            </div>
+            <nav class="main-navigation">
+               <ul>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#products">Shop</a></li>
+                  <li><a href="#featured">Featured</a></li>
+                  <li><a href="#newsletter">Updates</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <section class="banner">
+         <div class="banner-text container">
+            <p class="collection">New Products</p>
+            <p class="season">Shop for for your Technology Needs</p>
+         </div>
+      </section>
+
+      <main id="main" class="site-main" tabindex="-1">
+         <section class="about" id="about">
+            <div class="about-text container">
+               <h2>Hand-Crafted <span class="heavy">Styles</span></h2>
+               <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+            </div>
+         </section>
+
+         <section class="products" id="products">
+            <div class="product-categories">
+               <div class="category-wide computer">
+                  <span class="category-name"><a href="#">Computers</a></span>
+               </div>
+               <div class="category-square television">
+                  <span class="category-name"><a href="#">Television</a></span>
+               </div>
+               <div class="category-square phones">
+                  <span class="category-name"><a href="#">Phones</a></span>
+               </div>
+               <div class="category-square sale">
+                  <span class="category-name"><a href="#">Sale</a></span>
+               </div>
+               <div class="category-square audio">
+                  <span class="category-name"><a href="#">Audio</a></span>
+               </div>
+               <div class="category-wide entertainment">
+                  <span class="category-name"><a href="#">Entertainment</a></span>
+               </div>
+            </div>
+         </section>
+
+         <section class="featured" id="featured">
+            <div class="container">
+               <h2>Most-Loved <span class="heavy">Products</span></h2>
+               <div class="product-list">
+                  <div class="product-wrapper">
+                     <img src="" alt="" />
+                     <p class="product-type"></p>
+                     <h3></h3>
+                     <p class="price"></p>
+                    <button class="button-view" id="" data-sku="">Quick View</button>
+                    <button class="button-add" id="" data-sku="">Add To Cart</button>                                 
+                  </div> 
+
+                  <div id="viewModal"><span class="close">x</span><div id="modalContent"></div></div>
+  <!--  
+                  <div class="product-wrapper">
+                     <img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress" />
+                     <p class="product-type">Dresses</p>
+                     <h3>Stretch Knit Dress</h3>
+                     <p class="price">$169.00</p>
+                    <button class="button-view" id="" data-sku="">Quick View</button>
+                    <button class="button-add" id="" data-sku="">Add To Cart</button>
+                    <div class="viewModal"><span class="close">x</span></div>
+                    <div class="addToCartModal"><span class="close">x</span></div>               
+                  </div>   
+              -->           
+                  
+               </div>
+            </div>
+         </section>
+
+         <section class="newsletter" id="newsletter">
+            <div class="sign-up-wrapper container">
+               <h2>Sign-up for <span class="heavy">Updates</span></h2>
+               <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+
+               <form class="sign-up-form">
+                  <input type="email" name="your_email" id="your-email" value="" placeholder="Your Email">
+                  <input type="submit" name="subscribe" value="Subscribe" id="subscribe">
+               </form>
+            </div>
+         </section>
+      </main>
+
+      <footer class="site-footer">
+         <div class="container">
+            <div class="colophon">
+               <div class="copyright">
+                  <p>&copy; 2016 Aloha Apparel Co.</p>
+                  <p>Powered by HTML and CSS.</p>
+               </div>
+
+               <div class="contact">
+                  <p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
+               </div>
+
+               <div class="address">
+                  <p>1490 W Broadway</p>
+                  <p>Vancouver, BC, Canada</p>
+               </div>
+            </div>
+
+            <ul class="social">
+               <li><a href="#"><i class="fa fa-facebook"></i> <span class="network-name">Facebook</span></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i> <span class="network-name">Twitter</span></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i> <span class="network-name">Instagram</span></a></li>
+               <li><a href="#"><i class="fa fa-pinterest"></i> <span class="network-name">Pinterest</span></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i> <span class="network-name">Google+</span></a></li>
+            </ul>
+         </div>
+
+         <!-- JavaScript files -->
+        <script defer src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script defer src="js/lib/flickity.pkgd.min.js"></script>
+        <script defer src="js/main-stretch.js"></script>
+        <script defer src="build/bundle.js"></script>
+        <script defer src="js/lib/tota11y.min.js"></script>
+      </footer>
+   </body>
+</html>
